@@ -168,7 +168,7 @@ Set the values to requery
  obj.Req4token = "1";               // 0 = No (default), 1 = Yes for more card related information
  obj.TypeID = "sandbox";            // Set which type of environment with either **sandbox** or **production**
  ```
- Use equeryOrderIDSingle() fucntion to trigger 
+ Use RequeryOrderIDSingle() fucntion to trigger 
  ```CSharp
  obj.RequeryOrderIDSingle();
  ```
