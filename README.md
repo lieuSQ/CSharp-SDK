@@ -17,7 +17,7 @@ Version 1.2.1 (updated)
 
 Add `using MolPayCS;` 
 
-Create MOLPayCS object in order to access the properties of Base: 
+Create MOLPayCS object in order to access the properties of Payment: 
 
 ```CSharp
 MolPayCS.Payment object = new MolPayCS.Payment();
@@ -168,7 +168,7 @@ Set the values to requery
  obj.Req4token = "1";               // 0 = No (default), 1 = Yes for more card related information
  obj.TypeID = "sandbox";            // Set which type of environment with either **sandbox** or **production**
  ```
- Use equeryOrderIDSingle function to trigger 
+ Use RequeryOrderIDSingle function to trigger 
  ```CSharp
  obj.RequeryOrderIDSingle();
  ```
@@ -235,7 +235,7 @@ Set the values to requery
 ## Seamless Integration
 Add `using MolPayCS;` 
 
-Create MOLPayCS object in order to access the properties of Base: 
+Create MOLPayCS object in order to access the properties of Seamlesspayment: 
 
 ```CSharp
  MolPayCS.Seamlesspayment obj = new MolPayCS.Seamlesspayment();
@@ -292,11 +292,11 @@ FAQ
 **1. Exception of type 'System.IO.FileLoadException' occurred**
 1. Simply right-click the "References" folder and select "Manage NuGet Packages...".
 2. Select the Browse tab.
-3. In the search bar in the upper left type "Newtonsoft.Jason".
+3. In the search bar in the upper left type "Newtonsoft.Json".
 4. Click "Install" and you're done.
 
 **OR**
-1. Remove Newtonsoft.Jason on reference.
+1. Remove Newtonsoft.Json on reference.
 
 
 
